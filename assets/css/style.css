@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+.logo, .button {
+	margin: 30px;
+	padding: 20px;
+	max-width: 100%;
+	text-align: center;
+}
+
+img {
+		max-width: 100%;
+}
+h2, h3, h4{
+    color: white;
+    text-align: center;
+}
+
