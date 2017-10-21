@@ -3,35 +3,30 @@
 <head>
 	<title>Hangman Game!</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
-<body>
-
-	<div class="logo">
-		<img src="assets/images/in-n-out.png">
-	</div>
-	<h1 id="lose" style="color:red"></h1>
-	<h1 id="win" style="color:green"></h1>
-	<h2>Right Words:
-			<span id="rightGuess"></span>
-	</h2>
-		<br>
-	<h4>Lives:
-			<span id="lives">7</span>
-	</h4>
-		<br>
-	<h3>Wrong Words:
-		<br>
-			<span id="wrongGuess"></span>
-	</h3>
-
-	<button onclick="myFunction()">TRY AGAIN!</button>
-	<embed src="assets/music/In-N-Out TV Ad (1987).mp3" autostart="true" loop= "true" width="2" height="0">
-
-<footer>
-<script src="assets/javascript/game.js"> </script>
-</footer>
-
-</body>
+	<body>
+		<div class="logo">
+			<img src="assets/images/in-n-out.png">
+		</div>
+			<h1 id="lose" style="color:red"></h1>
+			<h1 id="win" style="color:green"></h1>
+			<h2>CURRENT WORD
+			<span id="rightWord"></span>
+			</h2>
+				<br>
+			<h4>NUMBER OF GUSSES REMAINING
+				<span id="lives">13</span>
+			</h4>
+				<br>
+			<h3>LETTER ALREADY GUSSED
+				<br>
+				<span id="wrongWord"></span>
+			</h3>
+			<button id= "button" onclick="myFunction()">TRY AGAIN!</button>
+<!-- 		<embed src="assets/music/In-N-Out TV Ad (1987).mp3" autostart="true" loop= "true" width="2" height="0"> -->
+		<script src="assets/javascript/game.js"> </script>
+	</body>
 </html>
+	
+
 	
