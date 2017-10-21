@@ -18,11 +18,13 @@ function randomNum() {
 	var randNum = Math.floor(Math.random() * words.length);
 	return randNum;
 }
+
 function randomWord() {
 	var randomWord = words[randomNum()];
 	var randomWordSplit  = randomWord.split('');
 	return randomWordSplit;
 }
+
 function makeUnderScore(randWord) {
 	var underScoreArr = []
 	for(var i = 0; i < randWord.length; i++) {
@@ -34,7 +36,7 @@ function makeUnderScore(randWord) {
 }
 
 function checkRightWord(underScore) {
-for(var i =0, x = 1;i <randomWordFunc.length; i++, x++) {
+	for(var i =0, x = 1;i <randomWordFunc.length; i++, x++) {
 		if(userInputKey === randomWordFunc[i]) {
 			underScore.fill(userInputKey,i,x);
 			rightWordTxt.textContent = underScore;
@@ -90,9 +92,11 @@ function start() {
 		checkWord();
 	}
 }
-	function myFunction() {
+
+function myFunction() {
     	location.reload();
 }
-	randomWordFunc=  randomWord();
-		underScore = makeUnderScore(randomWordFunc);
-		start();
+
+randomWordFunc=  randomWord();
+underScore = makeUnderScore(randomWordFunc);
+start();
